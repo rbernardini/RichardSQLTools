@@ -8,6 +8,9 @@ dbcc freesessioncache
 go
 dbcc freesystemcache('all')
 go
+/* para extra violencia */
+-- DBCC FREEPROCCACHE
+go
 DBCC SHRINKFILE (N'tempdev' , 1024)
 GO
 DBCC SHRINKFILE (N'tempdev2' , 1024)
