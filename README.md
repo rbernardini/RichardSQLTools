@@ -1,4 +1,5 @@
 # RichardSQLTools
+
 Scripts para SQL Server
 
 Estos son pequeños scripts que fui armando a medida que fui necesitandolos y los dejo acá para compartir.
