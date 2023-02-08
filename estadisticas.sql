@@ -1,0 +1,1 @@
+select OBJECT_SCHEMA_NAME(s.object_id,db_id()) sch ,OBJECT_NAME(s.object_id) tabla ,* from sys.stats s cross apply sys.dm_db_stats_properties(s.object_id,s.stats_id) where OBJECT_SCHEMA_NAME(s.object_id,db_id()) != 'sys' order by modification_counter desc
